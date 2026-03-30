@@ -1,6 +1,11 @@
 {
   "version": 1,
   "skills": {
+    "apple-calendar": {
+      "source": "sundial-org/awesome-openclaw-skills",
+      "sourceType": "github",
+      "computedHash": "684d54249e9aaec6d33c1591908e88e6fc48ea7e4f709d0c23e170eec1ed5b43"
+    },
     "better-auth-best-practices": {
       "source": "better-auth/skills",
       "sourceType": "github",
@@ -10,6 +15,26 @@
       "source": "anthropics/skills",
       "sourceType": "github",
       "computedHash": "063a0e6448123cd359ad0044cc46b0e490cc7964d45ef4bb9fd842bd2ffbca67"
+    },
+    "gws-calendar": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "dd7299b62e3ce9fb1996548a3238ca33e24f3958a06f89d0e1f5f7b8c828aad5"
+    },
+    "gws-calendar-agenda": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "6d57bdee60cf182aa728cccb28a89cac6e7c8e560ff15cefc8b3f4caeecc4179"
+    },
+    "gws-calendar-insert": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "2b49a0e9ae0e6e0114ff831af986d3d30f0e41aa11625e269df8c031658b3979"
+    },
+    "gws-gmail": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "9baa9653ac375cd6af69106796fa1ff06f3e15ea32a09a5bb8073a6ca67f9f77"
     },
     "neon-postgres": {
       "source": "neondatabase/agent-skills",
