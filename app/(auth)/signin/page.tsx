@@ -3,25 +3,13 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { signIn } from "@/lib/auth-client"
 import { Loader2 } from "lucide-react"
 import { toast } from "sonner"
 
 export default function SignInPage() {
-  const [socialLoading, setSocialLoading] = useState<string | null>(null)
+  const [socialLoading] = useState<string | null>(null)
 
-  const handleSocialSignIn = async (provider: "google" | "github") => {
-    setSocialLoading(provider)
-    try {
-      await signIn.social({
-        provider,
-        callbackURL: "/dashboard",
-      })
-    } catch {
-      toast.error(`Failed to sign in with ${provider}`)
-      setSocialLoading(null)
-    }
-  }
+
 
   return (
     <div className="w-full max-w-md">
@@ -41,7 +29,6 @@ export default function SignInPage() {
           <Button
             variant="outline"
             className="h-12 w-full justify-center gap-3 border-neutral-300 text-sm font-medium dark:border-neutral-700"
-            onClick={() => handleSocialSignIn("google")}
             disabled={!!socialLoading}
           >
             {socialLoading === "google" ? (
@@ -72,7 +59,6 @@ export default function SignInPage() {
           <Button
             variant="outline"
             className="h-12 w-full justify-center gap-3 border-neutral-300 text-sm font-medium dark:border-neutral-700"
-            onClick={() => handleSocialSignIn("github")}
             disabled={!!socialLoading}
           >
             {socialLoading === "github" ? (
